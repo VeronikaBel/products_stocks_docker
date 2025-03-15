@@ -71,5 +71,6 @@ python manage.py runserver
 2. Соберите образ в свой контейнер:
    docker build . --tag=название_образа:1.0
 
-3. Проверьте работу сервера:
-   curl http://localhost:8000/api/v1/status
+3. Запустите контейнер: docker run -d название_образа:1.0
+
+4. Проверьте работу сервера: curl http://localhost:8000/api/v1/status
